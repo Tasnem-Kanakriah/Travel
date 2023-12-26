@@ -1,0 +1,1202 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* font-family: 'Shadows Into Light', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+/* font-family: 'Edu TAS Beginner', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+/* font-family: 'Merienda', cursive; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* start loader */
+aside {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(132, 115, 151);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+.loader {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: fixed;
+    border: 3px solid #fff;
+    top: 50%;
+    animation: loader 2s infinite linear   ;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation:  loader-inner 2s infinite ease-in ; 
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    12% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    37% {
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: rotate(350deg);
+    }
+    67% {
+        transform: rotate(270deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    87% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);    
+    }
+}
+@keyframes loader-inner {
+    0% {
+        height: 0%
+    }
+    25% {
+        height: 0%
+    }
+    50% {
+        height: 50%
+    }
+    75% {
+        height: 100%
+    }
+    100% {
+        height: 0%
+    }
+}
+/* end loader */
+
+
+/* !start navbar */
+.section:nth-of-type(1) {
+    padding: 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #35333354;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 900;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px black;
+}
+.logo span {
+    color: #311e4eda;
+}
+.navbar .logo i {
+    margin-right: 10px;
+    font-size: 35px;
+    color: #311e4eda;
+}
+.navbar-item ul li:not(:nth-last-of-type(1)) .button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Edu TAS Beginner', cursive;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px ;
+}
+.navbar-item ul li:not(:nth-last-of-type(1)):hover {
+    text-shadow: 0 0 20px #372b49;
+}
+.navbar-item .buttons ul li:nth-last-of-type(1) .button {
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Edu TAS Beginner', cursive;
+    border: 2px solid white;
+    text-shadow: 0 0 10px ;
+}
+.navbar-item .buttons a {
+    position: relative;
+}
+.links a{
+    padding: 10px 15px !important;
+}
+.section:nth-of-type(1) .container::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    z-index: 2;
+    background-color: #ffffffb9;
+}
+.buttons ul {
+    display: flex;
+}
+.buttons ul li:not(:nth-last-of-type(1)) a {
+    background-color: transparent;
+    border: none;
+}
+/*! end navbar */
+
+
+/* start header */
+.slider {
+    width: 100vw !important;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.list2 {
+    position: absolute;
+    display: flex;
+    transition: 1.5s;
+}
+.list2 video {
+    width: 100vw;
+    aspect-ratio: 8/4;
+    height: 100%;
+    object-fit: cover;
+}
+.item {
+    position: relative;
+    width: 100vw !important;
+}
+header .buttons #prev1,header .buttons #next1 {
+    visibility: hidden;
+}
+.dots {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    bottom: 27px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.dots li {
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    margin: 20px;
+    position: relative;
+    z-index: 88;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0 0 15px 2px #462e64;
+    cursor: pointer;
+}
+.dots li.active {
+    width: 50px;
+}
+header .container {
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+}
+header .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(110, 100, 117, 0.308);
+}
+.container span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+header .title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive; 
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px;
+}
+header .subtitle {
+    color: white;
+    line-height: 33px;
+    font-size: 25px;
+    font-family: 'Edu TAS Beginner', cursive;
+    text-shadow: 0 0 10px;
+}
+header .container .button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-shadow: 0 0 10px;
+}
+header .container .button:hover {
+    color: #543f74da;
+    border: #543f74da;
+    background-color: white;
+}
+/* end header */
+
+
+/*! start header-title */
+.header-title {
+    color: #4f3f68;
+    font-size: 35px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    font-family: 'Merienda', cursive;
+    text-transform: uppercase;
+}
+.header-title::after {
+    position: relative;
+    display: block;
+    content: '';
+    bottom: -15px;
+    background: rgb(131,122,142);
+    background: radial-gradient(circle, rgba(131,122,142,1) 21%, rgba(115,95,138,1) 39%, rgba(100,70,134,1) 52%, rgba(88,51,129,1) 65%, rgba(66,34,102,1) 81%, rgba(43,9,78,1) 100%);
+    height: 2px;
+    width: 20%;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+/*! end header-title */
+
+
+/* start tourist places */
+.section:nth-of-type(2) .column {
+    margin: 0 20px;
+    width: 330px;
+    border-radius: 12px;
+}
+.section:nth-of-type(2) img {
+    border-radius: 12px;
+    width: 330px;
+    height: 200px;
+}
+.section:nth-of-type(2) .columns {
+    display: flex;
+    justify-content: center;
+}
+.section:nth-of-type(2) .title {
+    margin-top: 40px !important;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+    color: #4b5889;
+    font-size: 25px;
+    text-align: center;
+}
+.section:nth-of-type(2) .subtitle {
+    padding: 0 10px;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 22px;
+    text-align: center;
+}
+/* end tourist places */
+
+
+/*! start pictures taken by tourists */
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(4, 180px);
+    gap: 20px;
+}
+main div {
+    position: relative;
+}
+main .overlay1 {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(56, 56, 55, 0.363);
+    visibility: hidden;
+}
+main div:hover .overlay1 {
+    visibility: visible;
+}
+main section {
+    margin: 15px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    /* background-color: rgb(133, 192, 172); */
+}
+main section .title,main section .subtitle {
+    color: #fff;
+    font-size: 20px !important;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: normal;
+    margin-left: 15px;
+
+}
+main .overlay1 section img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: initial;
+}
+main .overlay1 .name_pic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+main div img {
+    border-radius: 12px;
+    box-shadow: 0 0 10px 5px rgb(186, 175, 206);
+    width: 100%;
+    height: 100%;
+}
+main div:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+main div:nth-of-type(2) {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+main div:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+main div:nth-of-type(4) {
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+main div:nth-of-type(5) {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+main div:nth-of-type(6) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+main div:nth-of-type(7) {
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+main div:nth-of-type(8) {
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+main div:nth-of-type(9) {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+main div:nth-of-type(10) {
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+/*! end pictures taken by tourists */
+
+
+/* start countUp */
+.counters1 {
+    padding: 20px;
+    text-align: center;
+}
+.counters1>div {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+}
+.counter1 {
+    border: 2px dashed black;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    background-color: #b2bfc6;
+}
+.counter1  i {
+    color: #4f3f68;
+    font-size: 35px;
+}
+.counter1 .title {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ece3dd;
+    margin: 10px 0 30px 0 ;
+    font-family: 'Shadows Into Light', cursive;
+}
+.counter1 .subtitle {
+    font-size: 30px;
+    font-weight: 800;
+    color: #4f3f68;
+    letter-spacing: 1px;
+    font-family: 'Shadows Into Light', cursive;
+}
+/* end countUp */
+
+
+/*! start slider_pic  */
+.section:nth-of-type(2) .swiper-container {
+    width: 330px;
+    height: 230px;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            border-radius: 12px;
+            position: relative;
+        }
+    }
+}
+.section:nth-of-type(2) .owl-carousel .owl-item img {
+    width: 330px !important;
+}
+.section:nth-of-type(2) .swiper-wrapper img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 1px #4d3769;
+}
+.swiper-button-prev::after,.swiper-button-next::after {
+    color: #fff;
+    font-size: 30px !important;
+}
+.swiper-pagination,.swiper-scrollbar-horizontal {
+    visibility: hidden;
+}
+/*! end slider_pic  */
+
+
+/* start hotel rooms */
+.section:nth-of-type(3) {
+    background-color: #6b849185;
+}
+.owl-carousel .item img {
+    width: 420px !important;
+    height: 250px;
+    border-radius: 24px;
+}
+.owl-dots {
+    visibility: hidden;
+}
+.owl-nav {
+    position: absolute;
+    top: 5%;
+    transform: translate(50% 50%);
+    margin-top: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: rgba(186, 153, 218); */
+}
+.owl-nav .owl-prev,.owl-nav .owl-next {
+    font-size: 100px !important;
+    color: #fff !important;
+    width: 50px !important;
+}
+.owl-nav .owl-next {
+    margin-right: 20px !important;
+}
+.owl-nav .owl-prev:hover,.owl-nav .owl-next:hover {
+    background-color: transparent !important;
+}
+.content1 {
+    padding: 15px;
+    color: #000;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.content1 i {
+    color: #a1643b;
+    margin-bottom: 10px;
+}
+.content1 .title {
+    color: #4b5889;
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive ;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.content1 .subtitle , .content1 .button {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.content1 .button {
+    background-color: transparent;
+    color: #4a4a4a;
+    font-size: 22px;
+    border: 2px solid #4a4a4a;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+.content1 .button:hover {
+    background-color: #4b5889;
+    color: white;
+    border: none;
+}
+/* end hotel rooms */
+
+
+/*! start hotel restaurant */
+.section:nth-of-type(4) section .columns {
+    display: flex;
+    justify-content: center;
+}
+.radius {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #4b5889b4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #4f3f68;
+}
+.radius::after {
+    display: block;
+    content: '';
+    position: relative;
+    background-color: #4f3f68;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: -17px;
+    margin: 0 auto;
+}
+.columns:nth-of-type(1) {
+    margin-top: 50px;
+}
+.columns:nth-of-type(1) .column:nth-of-type(1) .radius {
+    background-image: url(chinese\ food/1.jpg);
+    position: absolute;
+}
+.columns:nth-of-type(1) .column:nth-of-type(2) .radius {
+    background-image: url(chinese\ food/2.jpg);
+}
+.columns:nth-of-type(1) .column:nth-of-type(3) .radius {
+    background-image: url(japanese\ food/6.jpg);
+}
+.columns:nth-of-type(1) .column:nth-of-type(4) .radius {
+    background-image: url(japanese\ food/7.jpg);
+}
+.columns:nth-of-type(2) .column:nth-of-type(1) .radius {
+    background-image: url(japanese\ food/5.jpg);
+}
+.columns:nth-of-type(2) .column:nth-of-type(2) .radius {
+    background-image: url(italian\ food/4.jpg);
+}
+.columns:nth-of-type(2) .column:nth-of-type(3) .radius {
+    background-image: url(franch\ food/3.jpg);
+}
+.radius span {
+    position: absolute;
+    bottom: -10px;
+    background-color: #fff;
+    width: 100%;
+    height: 44%;
+    border-top: 3px solid #4f3f68;
+}
+.radius span h3 {
+    position: relative;
+    text-align: center;
+    background-color: #b2bfc6;
+    margin-top: -5px;
+    border: 3px solid #4f3f68 ;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+/*! end hotel restaurant */
+
+
+/* start testemontial */
+.section:nth-of-type(7) {
+    position: relative;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section:nth-of-type(7) .test {
+    display: inline-block;
+    position: relative;
+    background-color: #ece3dd;
+    border: 2px solid ;
+    border-radius: 24px;
+    padding: 10px;
+    padding-bottom: 30px;
+    z-index: 888;
+    width:300px;
+}
+.section:nth-of-type(7) .test div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+.section:nth-of-type(7) div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.test1 {    
+    left: 150px;
+}
+.test2 {
+    left: 100px;
+}
+.test3 {
+    left: 50px;
+}
+.test4 {
+    left: 0px;
+}
+.test1:hover {
+    cursor: pointer;
+    top: -40px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.test2:hover {
+    top: -40px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.test3:hover {
+    top: -40px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.test4:hover {
+    top: -40px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.test .title {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-family: 'Shadows Into Light', cursive;
+}
+.test i {
+    margin-left: 20px;
+    font-size: 20px;
+}
+.test .subtitle {
+    font-family: 'Edu TAS Beginner', cursive;
+    padding-left: 10px;
+    font-size: initial ;
+    font-size: 1.30rem;
+}
+article {
+    width: 100%;
+    display: inline-block;
+}
+/* end testemontial */
+
+
+/*! start trademarks */
+.section:nth-of-type(9) .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section:nth-of-type(9) img {
+    width: 180px;
+    height: 80px;
+}
+.section:nth-of-type(9) a:nth-of-type(1) img {
+    height: 60px;
+}
+.section:nth-of-type(9) a {
+    margin: 20px;
+}
+/*! end trademarks */
+
+
+/* start form */
+.section:nth-of-type(8) form {
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    grid-template-rows: repeat(8, 40px);
+    justify-content: center;
+    gap: 20px;
+}
+.section:nth-of-type(8) form div {
+    position: relative;
+    width: 315px;
+    margin-left: 130px ;
+}
+.section:nth-of-type(8) form div img {
+    cursor: pointer;
+    width: 75px;
+    height: 40px;
+    border: 12px;
+}
+.section:nth-of-type(8) form input,.section:nth-of-type(9) form button {
+    padding: 4px ;
+    font-family: 'Edu TAS Beginner', cursive !important;
+    height: 50px;
+}
+.section:nth-of-type(8) form input {
+    background-color: #fff;
+    padding: 20px;
+    margin: 1px;
+    border: 2px solid #383131;
+    border-radius: 12px;
+    background-color: #b5c1cf;
+}
+.section:nth-of-type(8) input::placeholder {
+    color: gray;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 20px;
+}
+.section:nth-of-type(8) form input:nth-of-type(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.section:nth-of-type(8) form input:nth-of-type(2) {
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+.section:nth-of-type(8) form input:nth-of-type(3) {
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+.section:nth-of-type(8) form input:nth-of-type(4) {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+.section:nth-of-type(8) form div {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+.section:nth-of-type(8) form input:nth-of-type(5) {
+    grid-column: 1/5;
+    grid-row: 5/6;
+}
+.section:nth-of-type(8) form input:nth-of-type(6) {
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+.section:nth-of-type(8) form input:nth-of-type(7) {
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+.section:nth-of-type(8) form input:nth-of-type(8) {
+    grid-column: 1/5;
+    grid-row: 7/8;
+}
+.section:nth-of-type(8) form button {
+    grid-column: 4/5;
+    grid-row: 8/9;
+}
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Edu TAS Beginner', cursive !important;
+}
+.button-86::after,.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #311e4eda;
+  border-radius: 10px;
+}
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 100%;
+  height: 100%;
+}
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+/* end form */
+
+
+/*! start footer */
+.section:nth-of-type(10) {
+    background-color: #ece3dd;
+    margin-top: 30px;
+}
+.section:nth-of-type(10) .logo_1 span {
+    display: inline-block;
+    color: #311e4eda;
+}
+.section:nth-of-type(10) .columns:nth-of-type(1) .column:nth-of-type(1)  {
+    /* background-color: rgb(179, 206, 124); */
+    padding-top: 60px;
+}
+.section:nth-of-type(10) .columns:nth-of-type(1) .column:nth-of-type(1) div h1  {
+    /* background-color: rgb(212, 161, 161); */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} 
+.section:nth-of-type(10) .columns:nth-of-type(2)  {
+    margin-top: 40px;
+}
+.section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(2) a {
+    border-right: 1px solid black;
+    text-decoration: none;
+    position: relative;
+    box-shadow: initial;
+    padding-right: 20px;
+    margin-right: 25px;
+    font-size: 15px;
+    color: black;
+}
+.section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(2) {
+    display: flex;
+    align-items: center ;
+} 
+.section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(1) a {
+    color: black;
+}
+.section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(1) a i {
+    margin: 10px;
+    font-size: 20px;
+}
+.section:nth-of-type(10) .logo_1 i {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #311e4eda;
+}
+.section:nth-of-type(10) .logo_1 {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-right: 20px;
+    text-shadow: 0 0 30px black;
+
+}
+.section:nth-of-type(10) .column .title {
+    font-size: 25px ;
+    margin-bottom: 40px;
+    font-family: cursive ;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.section:nth-of-type(10) .column .subtitle {
+    font-size: 18px ;
+    line-height: 10px;
+    margin-bottom: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+/* end footer */
+
+
+/* start back to top */
+.btt {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #311e4eda;
+    bottom: 30px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: translate 1s ease-in infinite alternate ;
+}
+@keyframes translate {
+    0% {
+        transform: translate(0 , 15px);
+    }
+    100% {
+        transform: translate(0 , -10px);
+    }
+}
+.btt i {
+    font-size: 40px;
+    color: #fff;
+}
+/* end back to top */
+
+/* start toggle-btn */
+/* .toggle-btn i {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.drapdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background-color: rgb(211, 117, 117);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.drapdown_menu.open {
+    height: 435px;
+}
+.drapdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drapdown_menu li:nth-last-of-type(1) a {
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+} */
+/* end toggle-btn */
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .section:nth-of-type(2) .column {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .section:nth-of-type(2) .columns {
+        display: flex;
+        flex-direction: column;
+    }
+    .section:nth-of-type(6) .columns {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .section:nth-of-type(1) .logo {
+        position: absolute;
+        left: 0;
+        /* top: 5px; */
+        bottom: -12px;
+    }
+    header .dots {
+        top: 70%;
+        height: 40px;
+        z-index: 4;
+
+    }
+    .counters1>div {
+        grid-template-columns: 80%;
+        margin-left: 60px;
+    }
+    main {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .section:nth-of-type(8) form {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .section:nth-of-type(8) form div {
+        margin-left: 30px;
+    }
+    .section:nth-of-type(8) form button  {
+        left: 235px;
+    }
+    .section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(2)  {
+        flex-wrap: wrap;
+    }
+    .section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(2)  a:nth-of-type(2) {
+        border: none;
+    }
+    .section:nth-of-type(10) .columns:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    .section:nth-of-type(10) .columns:nth-of-type(2) .column:nth-of-type(1) {
+        padding-left: 0;
+    }
+    .test {
+        position: relative;
+        background-color: #ece3dd;
+        border: 2px solid ;
+        border-radius: 24px;
+        padding: 10px;
+        z-index: 888;
+        width:300px;
+        height: 420px;
+    }
+    .test1 {    
+        left: initial;
+        margin: 10px 35px;
+    }
+    .test2 {
+        left: initial;
+        margin: 10px 35px;
+    }
+    .test3 {
+        left: initial;
+        margin: 10px 35px;
+    }
+    .test4 {
+        left: initial;
+        margin: 10px 35px;
+    }  
+    header .title {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    header .column {
+        margin-bottom: 5px;
+        padding: 0 20px;
+    }
+    header .subtitle {
+        font-size: 16px;
+        line-height: 16px;
+    }  
+    header .button {
+        visibility: hidden;
+    }
+    header .slider {
+        height: 200px;
+    }
+    .owl-carousel .item img {
+        width: 365px !important;
+    }
+    /* .section:nth-of-type(4) section .columns {
+        flex-wrap: wrap;   
+    }
+    .section:nth-of-type(4) section .columns .column .radius  {
+        margin: 30px auto;
+    } */
+    .section:nth-of-type(4) section .columns {
+        display: grid;
+    }
+    .section:nth-of-type(4) section .columns:nth-of-type(1) .column:nth-of-type(2) .radius {
+        margin-top: 200px ;
+    }
+}
+
+/* @media (max-width: 992px) {
+    .toggle-btn {
+        display: block;
+    }
+    .drapdown_menu {
+        display: block;
+    }
+} */

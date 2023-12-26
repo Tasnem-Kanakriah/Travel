@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="icon" href="../img/plane.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <aside class="aside">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </aside>
+
+    <!-- start navbar -->
+    <div class="section">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div><a href="" data-aos="zoom-in-left" data-aos-delay="50" class="button logo">
+                        <i class='bx bxs-plane-alt bx-flip-horizontal'></i>
+                        T <span>r</span>A<span>v</span>e <span>L</span>
+                    </a></div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+
+                        <div class="buttons is-hidden-mobile">
+                            <ul class="links">
+                                <li><a href="#home" class="button" data-aos="zoom-in-left" data-aos-delay="100">home</a>
+                                </li>
+                                <li><a href="#tourist-areas" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="150">tourist areas</a></li>
+                                <li><a href="#rooms" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="200">rooms</a></li>
+                                <li><a href="#restaurant" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="250">restaurant</a></li>
+                                <li><a href="#visitors" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="300">visitors</a></li>
+                                <li><a href="#relationships" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="350">relationships</a></li>
+                                <li><a href="#book-form" class="button" data-aos="zoom-in-left"
+                                        data-aos-delay="400">book now</a></li>
+                            </ul>
+                           
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+
+    <!-- start header -->
+    <header id="home">
+        <div class="con">
+            <div class="slider">
+                <div class="list2">
+                    <div class="item">
+                        <video src="./video/main-victoria-harbour.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">victoria
+                                        harbour</h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">Victoria
+                                        Harbor is one of the most popular tourist attractions in Hong Kong, as you can
+                                        enjoy stunning views across Hong Kong.</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <video src="./video/lantau1.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">lantau
+                                        island</h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">Lantau Island
+                                        is considered one of the largest islands in Hong Kong, and is located at the
+                                        mouth of the Pearl River.</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <video src="./video/victoria-peak.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">victoria
+                                        peak</h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">Victoria Peak
+                                        is a hill located in the western half of Hong Kong Island. Also known as Mount
+                                        Austin.</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <video src="./video/victoria-harbour.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">symphony of lights</h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">Between the
+                                        sea and the sky, as the evening approaches, a symphony of lights steals
+                                        visitors' attention with an imaginative scene of lights synchronized with each
+                                        other.</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <video src="./video/lantau2.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">lantau island</h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">It is
+                                        characterized by the abundance of wide green spaces within it, and contains many
+                                        picturesque trees and shrubs, as well as many palm trees.</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <video src="./video/wetland.mp4" autoplay muted loop></video>
+                        <div class="over"></div>
+                        <div class="container">
+                            <span>
+                                <div class="column">
+                                    <h1 class="title" data-aos="fade-down" data-aos-delay="700">wetland park
+                                    </h1>
+                                </div>
+                                <div class="column is-6">
+                                    <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-delay="750">Wetland Park
+                                        Hong Kong is considered one of the most wonderful parks in Hong Kong, and it is
+                                        one of the international ecological parks</p>
+                                </div>
+                                <div class="column is-2"><a href="" class="button" data-aos="fade-up"
+                                        data-aos-delay="800">view video</a></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="buttons">
+                    <button id="prev1"></button>
+                    <button id="next1"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start tourist places -->
+    <div class="section" id="tourist-areas">
+        <div class="container">
+            <div class="header-title">
+                <h1>Tourist areas in Hong Kong</h1>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-3 " data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="victoria harbour/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="victoria harbour/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="victoria harbour/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="victoria harbour/3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="victoria harbour/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">victoria harbour</h1>
+                    <p class="subtitle mb-4">The most classic view of the harbour is from the Tsim Sha Tsui waterfront.
+                    </p>
+                </div>
+                <div class="column is-3 is-mobile" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="disenyland/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="disenyland/1.JPG" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="disenyland/2.JPG" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="disenyland/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">disenyland</h1>
+                    <p class="subtitle mb-4">It is considered one of the most beautiful Disney parks in the entire world
+                    </p>
+                </div>
+                <div class="column is-3 is-mobile" data-aos="zoom-in-left" data-aos-delay="100">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="mount victoria/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="mount victoria/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="mount victoria/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="mount victoria/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">mount victoria</h1>
+                    <p class="subtitle mb-4">Breathtaking views and great walking tracks reward those who venture to the
+                        top of Mount Victoria.</p>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-3 is-mobile" data-aos="zoom-in-right" data-aos-delay="200">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="wetland/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="wetland/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="wetland/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="wetland/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">wetland park</h1>
+                    <p class="subtitle mb-4">It provides an opportunity to experience the wetland ecosystem along with
+                        the importance of its conservation.</p>
+                </div>
+                <div class="column is-3 is-mobile" data-aos="zoom-in-left" data-aos-delay="200">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="lantau island/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="lantau island/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="lantau island/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="lantau island/3.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">lantau island</h1>
+                    <p class="subtitle mb-4">Many tourists like to enjoy watching the unique flora and fauna, as well as
+                        enjoying the view of birds and butterflies.</p>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-3 is-mobile" data-aos="zoom-in-right" data-aos-delay="300">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="ocean park/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="ocean park/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="ocean park/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="ocean park/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">ocean park</h1>
+                    <p class="subtitle mb-4">It gives tourists a wonderful opportunity to see some marine animals, fish,
+                        and dolphin shows up close</p>
+                </div>
+                <div class="column is-3 is-mobile" data-aos="fade-up" data-aos-delay="300">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="kowloon park/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kowloon park/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kowloon park/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kowloon park/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">kowloon park</h1>
+                    <p class="subtitle mb-4">Kowloon Park was built in the classical Chinese style, in addition to many
+                        green spaces.</p>
+                </div>
+                <div class="column is-3 is-mobile" data-aos="zoom-in-left" data-aos-delay="300">
+                    <div class="swiper-container slider_pic">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="science museum/main.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="science museum/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="science museum/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="science museum/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <h1 class="title mt-5 ">science museum</h1>
+                    <p class="subtitle mb-4">This museum offers interesting and fun scientific trips, in addition to
+                        robotics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end tourist places -->
+
+
+    <!-- start Hotel rooms  -->
+    <div class="section" id="rooms">
+        <div class="container">
+            <div class="header-title">
+                <h1>Hotel rooms</h1>
+            </div>
+            <section>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="hotel rooms/main2.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">economic room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">double bed </p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking wetland park</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/main1.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">vip room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">double bed</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria peak</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/4.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">family room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">two bed</p>
+                            <p class="subtitle is-capitalized">sleeps 4</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria Harbour</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/8.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">economic room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">air condation</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria Harbour</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/5.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">vip room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">air condation</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking wetland park</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/6.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">vip room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">air condation</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria Harbour</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/7.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">economic room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">air condation</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria Harbour</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="hotel rooms/main3.jpg" alt="">
+                        <div class="content1">
+                            <div>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <h1 class="title is-capitalized">family room</h1>
+                            <p class="subtitle is-capitalized">free wi-fi</p>
+                            <p class="subtitle is-capitalized">air condation</p>
+                            <p class="subtitle is-capitalized">sleeps 2</p>
+                            <p class="subtitle is-capitalized">Overlooking Victoria Harbour</p>
+                            <button class="button">book now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end Hotel rooms  -->
+
+
+    <!-- start hotel restaurant -->
+    <div class="section" id="restaurant">
+        <div class="container">
+            <div class="header-title">
+                <h1>hotel restaurant</h1>
+            </div>
+            <section>
+                <div class="columns">
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Fish</h3></span>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Chicken</h3></span>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Tempura</h3></span>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Sushi</h3></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Salad</h3></span>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Panna Cotta</h3></span>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="radius">
+                            <span><h3>Crepe Sweet</h3></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end hotel restaurant -->
+
+
+    <!-- start pictures taken by tourists -->
+    <div class="section">
+        <div class="container">
+            <div class="header-title">
+                <h1>Pictures taken by tourists</h1>
+            </div>
+            <main>
+                <div><img src="/img from tourists/15.jpg" alt="" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/19.jpg" alt="">
+                                <h3 class="title">ren jia lun</h3>
+                            </div>
+                            <p class="subtitle location">victoria harbour</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/3.jpg" alt="" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/9.jpg" alt="">
+                                <h3 class="title">hyun bin</h3>
+                            </div>
+                            <p class="subtitle location">ocean park</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/5.jpg" alt="" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/7.jpg" alt="">
+                                <h3 class="title">kento yamazaki</h3>
+                            </div>
+                            <p class="subtitle location">Kowloon Park</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/9.jpg" alt="" data-aos="fade-up" data-aos-delay="400">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/6.jpg" alt="">
+                                <h3 class="title">mark lee</h3>
+                            </div>
+                            <p class="subtitle location">victoria harbour</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/2.jpg" alt="" data-aos="fade-up" data-aos-delay="500">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/2.jpg" alt="">
+                                <h3 class="title">bae suzy</h3>
+                            </div>
+                            <p class="subtitle location">mount victoria</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/4.jpg" alt="" data-aos="fade-up" data-aos-delay="600">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/14.jpg" alt="">
+                                <h3 class="title">Jean Dujardin</h3>
+                            </div>
+                            <p class="subtitle location">victoria harbour</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/7.jpg" alt="" data-aos="fade-up" data-aos-delay="700">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/12.jpg" alt="">
+                                <h3 class="title">sara smith</h3>
+                            </div>
+                            <p class="subtitle location">Symphony of lights</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/8.jpeg" alt="" data-aos="fade-up" data-aos-delay="800">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/18.jpg" alt="">
+                                <h3 class="title">Sun Li</h3>
+                            </div>
+                            <p class="subtitle location">victoria harbour</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/6.jpg" alt="" data-aos="fade-up" data-aos-delay="900">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/10.jpg" alt="">
+                                <h3 class="title">Chen Zhe Yuan</h3>
+                            </div>
+                            <p class="subtitle location">victoria harbour</p>
+                        </section>
+                    </div>
+                </div>
+                <div><img src="/img from tourists/1.jpg" alt="" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="overlay1">
+                        <section>
+                            <div class="name_pic">
+                                <img src="pepole face/8.jpg" alt="">
+                                <h3 class="title">Dylan Wang</h3>
+                            </div>
+                            <p class="subtitle location">disenyland</p>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- end pictures taken by tourists -->
+
+
+    <!-- start counterUp -->
+    <div class="counters1">
+        <div>
+            <div class="counter1" data-aos="zoom-in-right" data-aos-delay="500">
+                <i class='bx bx-happy-beaming'></i>
+                <h1 class="title"><span data-count="356">0</span>k</h1>
+                <h3 class="subtitle">our clients</h3>
+            </div>
+            <div class="counter1" data-aos="zoom-in-right" data-aos-delay="300">
+                <i class='bx bx-comment-detail'></i>
+                <h1 class="title"><span data-count="197k">0</span>k</h1>
+                <h3 class="subtitle">testimonial</h3>
+            </div>
+            <div class="counter1" data-aos="zoom-in-left" data-aos-delay="300">
+                <i class='bx bx-star'></i>
+                <h1 class="title"><span data-count="138k">0</span>k</h1>
+                <h3 class="subtitle">five stars</h3>
+            </div>
+            <div class="counter1" data-aos="zoom-in-left" data-aos-delay="500">
+                <i class='bx bx-fork'></i>
+                <h1 class="title"><span data-count="37">0</span></h1>
+                <h3 class="subtitle">meals</h3>
+            </div>
+        </div>
+    </div>
+    <!-- end counterUp -->
+
+
+    <!-- start testemontial -->
+    <div class="section" id="visitors">
+        <div class="container">
+            <div class="header-title">
+                <h1>Our clients' opinion</h1>
+            </div>
+            <article>
+                <div class="test test1" data-aos="zoom-in-left" data-aos-delay="100">
+                    <div></div>
+                    <div>
+                        <img src="pepole face/2.jpg" alt="">
+                        <h1 class="title">bae suzy</h1>
+                    </div>
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p class="subtitle">I stayed here for 5 nights with my husband and two children. I chose this hotel
+                        as they offer a large, comfortable bed, suitable for a family of four. I requested a loft and a
+                        double bed and the requests were met. Everything you need for your travel is close to the
+                        railway mass transit area, shopping malls, food stalls and public markets are easy to reach.</p>
+                </div>
+
+                <div class="test test2" data-aos="zoom-in-left" data-aos-delay="200">
+                    <div></div>
+                    <div>
+                        <img src="pepole face/7.jpg" alt="">
+                        <h1 class="title">hyun bin</h1>
+                    </div>
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p class="subtitle">I had a great stay at this conveniently located hotel with easy transportation
+                        and plenty of dining options. The room was always clean and comfortable thanks to the
+                        hardworking and friendly cleaning staff, especially the housekeeper Shek Bing. I highly
+                        recommend this hotel to enjoy your vacation with your family.</p>
+                </div>
+
+                <div class="test test3" data-aos="zoom-in-left" data-aos-delay="300">
+                    <div></div>
+                    <div>
+                        <img src="pepole face/11.jpg" alt="">
+                        <h1 class="title">lee jung seok</h1>
+                    </div>
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p class="subtitle">Today we went to Nina Hotel Cafe Circle to celebrate my father's birthday. There
+                        were different types of food including Chinese, French, Japanese etc. All the food was
+                        delicious. I especially liked the dessert.
+                        The environment was comfortable and the staff were friendly, and I want to especially thank
+                        Gavin Geary.</p>
+                </div>
+
+                <div class="test test4" data-aos="zoom-in-left" data-aos-delay="400">
+                    <div></div>
+                    <div>
+                        <img src="pepole face/13.jpg" alt="">
+                        <h1 class="title">Sun Li</h1>
+                    </div>
+                    <i class='bx bxs-quote-alt-right'></i>
+                    <p class="subtitle">The room is very comfortable, and the service is nice. The supervisor is
+                        friendly and the view from the room is very pleasant. The hotel has excellent service including
+                        outdoor activities such as swimming pool and gym. The room attendant Sarita is very friendly and
+                        hospitable. Thank you all. I enjoyed the stay.</p>
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+    <!-- end testemontial -->
+
+
+    <!-- start form -->
+    <div class="section" id="book-form">
+        <div class="container">
+            <div class="header-title">
+                <h1>Contact us to book</h1>
+            </div>
+            <form>
+                <input type="text" placeholder="First Name " data-aos="zoom-in-right" data-aos-delay="100">
+                <input type="text" placeholder="Last Name " data-aos="zoom-in-left" data-aos-delay="100">
+                <input type="tel" placeholder="Phone " data-aos="zoom-in-left" data-aos-delay="200">
+                <input type="email" placeholder="Email " data-aos="zoom-in-right" data-aos-delay="300">
+                <div>
+                    <img src="https://booking.ninahotelgroup.com/public/images/Visa.png" alt="" data-aos="zoom-in-right"
+                        data-aos-delay="500">
+                    <img src="https://booking.ninahotelgroup.com/public/images/MasterCard.png" alt=""
+                        data-aos="zoom-in-right" data-aos-delay="400">
+                    <img src="https://booking.ninahotelgroup.com/public/images/Amex.png" alt="" data-aos="zoom-in-left"
+                        data-aos-delay="400">
+                    <img src="https://booking.ninahotelgroup.com/public/images/JCB.png" alt="" data-aos="zoom-in-left"
+                        data-aos-delay="500">
+                </div>
+                <input type="text" placeholder="Card Number " data-aos="zoom-in-left" data-aos-delay="600">
+                <input type="text" placeholder="Expiration Date (MM/YY) " data-aos="zoom-in-right" data-aos-delay="700">
+                <input type="text" placeholder="CVV " data-aos="zoom-in-left" data-aos-delay="700">
+                <input type="text" placeholder="Name On Card " data-aos="zoom-in-left" data-aos-delay="800">
+                <button type="submit" class="button-86" role="button" data-aos="zoom-in-left"
+                    data-aos-delay="900">reservation</button>
+            </form>
+        </div>
+    </div>
+    <!-- end form -->
+
+
+    <!-- start trademarks -->
+    <div class="section" id="relationships">
+        <div class="container">
+            <a href="" data-aos="zoom-in-right" data-aos-delay="250"><img
+                    src="https://www.enjoycar.hk/dist/static/enjoycar.f1d8e107.svg" alt=""></a>
+            <a href="" data-aos="zoom-in-right" data-aos-delay="150"><img
+                    src="https://www.logo.wine/a/logo/Hong_Kong_Airlines/Hong_Kong_Airlines-Logo.wine.svg" alt="">
+            </a>
+            <a href="" data-aos="fade-up" data-aos-delay="50"><img
+                    src="https://mc-1ba1fb3b-6c1c-4deb-94a0-831522-cdn-endpoint.azureedge.net/-/media/01---website-imagery/nina-hotels/nh-group/logo/nh_logo_c_150x90px-02.svg?rev=785eaedef7e7473b9bbb10f2240979c5"
+                    alt="">
+            </a>
+            <a href="" data-aos="zoom-in-left" data-aos-delay="150"><img src="./img/bikelogo.png" alt=""></a>
+            <a href="" data-aos="zoom-in-left" data-aos-delay="250"><img
+                    src="https://menufyproduction.imgix.net/637624949373125035+514087.png?fit=clip&w=600&h=&auto=compress,format"
+                    alt="">
+            </a>
+        </div>
+    </div>
+    <!-- end trademarks -->
+
+
+    <!-- start footer -->
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div>
+                        <h1 class="logo_1">
+                            <i class='bx bxs-plane-alt bx-flip-horizontal'></i>
+                            T <span>r</span>A<span>v</span>e <span>L</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 class="title">nina hotel</h1>
+                    <p class="subtitle" style="line-height: 20px;">8 yeung uk road, tsuen wan, <br> hong kong</p>
+                    <p class="subtitle">+852 2280 2898</p>
+                    <p class="subtitle">info.tww@ninahotelgroup.com</p>
+                </div>
+                <div class="column">
+                    <h1 class="title">about</h1>
+                    <p class="subtitle">nina hospitality</p>
+                    <p class="subtitle"> hitels and residences</p>
+                    <p class="subtitle">careers</p>
+                    <p class="subtitle">contact us</p>
+                    <p class="subtitle">chinachem group</p>
+                </div>
+                <div class="column">
+                    <h1 class="title">enjoy</h1>
+                    <p class="subtitle">rooms</p>
+                    <p class="subtitle">restaurants</p>
+                    <p class="subtitle">offers</p>
+                    <p class="subtitle">meetings and events</p>
+                    <p class="subtitle">weedings</p>
+                </div>
+                <div class="column">
+                    <h1 class="title">support</h1>
+                    <p class="subtitle">latest news</p>
+                    <p class="subtitle">awards and accolades</p>
+                    <p class="subtitle">fact</p>
+                    <p class="subtitle">fact sheet</p>
+                    <p class="subtitle">GDS code</p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column ">
+                    <div>
+                        <a href=""><i class='bx bxl-facebook'></i></a>
+                        <a href=""><i class='bx bxl-instagram'></i></a>
+                        <a href=""><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="column ">
+                    <a class="footer-bottom-right-copyright">© 2023 Nina Hospitality</a>
+                    <a href="/en/disclaimer" rel="noopener noreferrer" class="footer-bottom-right-link">Disclaimer</a>
+                    <a href="/en/privacy-policy" rel="noopener noreferrer" class="footer-bottom-right-link">Privacy
+                        Policy</a>
+                    <img src="https://mc-1ba1fb3b-6c1c-4deb-94a0-831522-cdn-endpoint.azureedge.net/-/media/01---website-imagery/nina-hotels/logos/footer/amemberofchinachem-logo-revised.svg?rev=e41a6198a7cc4b988769b6791b85bd48"
+                        class="footer-bottom-right-part-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <div class="btt"><a href="#"><i class='bx bx-chevrons-up'></i></a></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150
+        });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
